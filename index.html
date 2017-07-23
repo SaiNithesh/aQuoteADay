@@ -9,6 +9,8 @@
 </div>
 
 <script>
+
+function quote(){
 var quoteArray=[
   "You cannot escape the responsibility of tomorrow by evading it today",
   "All that I am, or hope to be, I owe to my angel mother",
@@ -34,6 +36,10 @@ var quoteArray=[
 
           var randomNumber=Math.floor((Math.random() * 20) + 1);
           document.getElementById('quote').innerHTML=quoteArray[randomNumber-1];
+		  
+		  }
+		  
+		  setInterval(quote, 3000);
 
 </script>
 
